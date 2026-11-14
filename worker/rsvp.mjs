@@ -68,7 +68,7 @@ export default {
         },
         body: JSON.stringify({
           from: env.RSVP_FROM,
-          to: ['p@ulcozens.com'],
+          to: ['mrxutu@icloud.com'],
           subject: 'RSVP for Tony’s cremation and celebration',
           text: ['Name: ' + name, '', ...lines].join('\n'),
         }),

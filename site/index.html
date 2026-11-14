@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>In memory of Anthony James Edwards (Tony)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="rsvp.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="intro">
+      <p class="eyebrow">In memory of</p>
+      <h1>Anthony James Edwards <span>(Tony)</span></h1>
+      <p class="lifespan"><time datetime="1942-02-23">23 February 1942</time> – <time datetime="2026-11-07">7 November 2026</time></p>
+      <p class="date">Friday 27 November 2026</p>
+      <nav aria-label="Page sections"><a href="#arrangements">Arrangements</a><a href="#rsvp">RSVP</a></nav>
+    </div>
+    <div class="flowers" aria-hidden="true"></div>
+  </header>
+  <main>
+    <section id="arrangements" aria-labelledby="arrangements-title">
+      <h2 id="arrangements-title">Arrangements</h2>
+      <div class="events">
+        <article>
+          <h3>Cremation</h3>
+          <p class="time"><time datetime="2026-11-27T14:40:00+00:00">2.40 pm</time></p>
+          <p><strong>Chester Crematorium</strong><br>Blacon Avenue, Chester, CH1 5BB</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Chester+Crematorium+Blacon+Avenue+CH1+5BB">Directions to the crematorium</a>
+        </article>
+        <article>
+          <h3>Celebration of Tony’s life</h3>
+          <p class="time"><time datetime="2026-11-27T15:30:00+00:00">3.30 pm</time></p>
+          <p><strong>The Chester Fields</strong><br>Chester Road, Mickle Trafford, Chester, CH2 4JR</p>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Chester+Fields+Mickle+Trafford+CH2+4JR">Directions to The Chester Fields</a>
+        </article>
+      </div>
+      <p class="note">Tony asked that people avoid wearing black.</p>
+    </section>
+
+    <section class="donations" aria-labelledby="donations-title">
+      <div>
+        <h2 id="donations-title">Donations in Tony’s memory</h2>
+        <p>Please no flowers. If you’d like to make a donation in Tony’s memory, the family would welcome donations to the Hospice of the Good Shepherd.</p>
+        <a href="https://donate.givetap.co.uk/f/donate?charity-name=hospice-of-the-good-shepherd&amp;custom-url=website">Donate online</a>
+      </div>
+    </section>
+
+    <section id="rsvp" aria-labelledby="rsvp-title">
+      <h2 id="rsvp-title">RSVP</h2>
+      <form data-endpoint="https://tony-memorial-rsvp.p-666.workers.dev/rsvp">
+        <label class="name" for="guest-name">Your name</label>
+        <input id="guest-name" name="guestName" autocomplete="name" maxlength="100" required>
+        <fieldset>
+          <legend>Which will you be attending?</legend>
+          <label class="choice"><input type="checkbox" name="cremation"> Cremation</label>
+          <div class="count" hidden>
+            <label for="cremation-count">Number attending the cremation, including you</label>
+            <input id="cremation-count" name="cremationCount" type="number" min="1" step="1" value="1" required disabled>
+          </div>
+          <label class="choice"><input type="checkbox" name="celebration"> Celebration</label>
+          <div class="count" hidden>
+            <label for="celebration-count">Number attending the celebration, including you</label>
+            <input id="celebration-count" name="celebrationCount" type="number" min="1" step="1" value="1" required disabled>
+          </div>
+        </fieldset>
+        <button type="submit">Send RSVP</button>
+        <p class="status" role="status"></p>
+        <noscript><p>Please enable JavaScript to use the RSVP form.</p></noscript>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

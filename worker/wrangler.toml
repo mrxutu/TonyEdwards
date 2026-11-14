@@ -1,0 +1,7 @@
+name = "tony-memorial-rsvp"
+main = "rsvp.mjs"
+compatibility_date = "2026-11-14"
+
+[vars]
+PAGES_ORIGIN = "https://mrxutu.github.io"
+RSVP_FROM = "Tony’s Memorial <rsvp@ulcozens.com>"

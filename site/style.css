@@ -1,0 +1,57 @@
+:root {
+  color-scheme: light;
+  --ink: #252c25;
+  --green: #384b3b;
+  --paper: #fcfaf5;
+  --line: #dedbd0;
+  font: 100%/1.6 system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+h1, h2, h3 { font-family: Georgia, serif; font-weight: 400; line-height: 1.13; margin: 0; }
+h1 { font-size: clamp(2.5rem, 6vw, 5.1rem); }
+h1 span { display: block; font-size: .54em; margin-top: .18em; }
+h2 { font-size: clamp(1.75rem, 4vw, 2.6rem); }
+h3 { font-size: 1.55rem; }
+p { margin: .85rem 0; }
+a { color: var(--green); text-underline-offset: .22em; }
+a:hover { text-decoration-thickness: .13em; }
+:focus-visible { outline: 3px solid #677e60; outline-offset: 4px; }
+.hero { display: grid; grid-template-columns: 1fr 1fr; background: #f1eee5; }
+.intro { align-self: center; padding: clamp(2rem, 7vw, 7rem); }
+.eyebrow { color: var(--green); font-size: .78rem; letter-spacing: .19em; text-transform: uppercase; margin: 0 0 1rem; }
+.lifespan { margin: .8rem 0 0; }
+.date { margin: 1.6rem 0 1rem; }
+nav { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.flowers { background: #e2dfd1 url(images/white-flowers.jpg) 75% center / cover no-repeat; min-height: 25rem; }
+main { width: min(64rem, 100% - 2.5rem); margin: auto; }
+main section { padding: clamp(2rem, 5vw, 3.5rem) 0; border-bottom: 1px solid var(--line); }
+main section:last-child { border: 0; }
+.events { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 1.4rem; }
+article { display: flex; flex-direction: column; align-items: start; padding: clamp(1rem, 3vw, 1.8rem); border: 1px solid var(--line); background: #fffdf9; }
+article a { margin-top: auto; }
+.time { font-size: 1.15rem; font-weight: 650; margin-bottom: 0; }
+.note { border-left: 3px solid #879581; padding: .45rem 0 .45rem .9rem; margin: 1.4rem 0 0; }
+.donations { display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem 2rem; }
+.donations div { flex: 1 1 20rem; }
+form { margin-top: 1.4rem; max-width: 34rem; }
+.name, legend { font-weight: 650; }
+input, button { font: inherit; }
+input[name=guestName], input[type=number] { display: block; margin-top: .35rem; padding: .5rem .65rem; border: 1px solid #888d83; border-radius: .2rem; background: white; color: var(--ink); }
+input[name=guestName] { width: 100%; }
+input[type=number] { width: 6rem; }
+fieldset { margin: 1.2rem 0; padding: 0; border: 0; }
+legend { padding: 0; }
+.choice { display: flex; gap: .6rem; align-items: center; width: fit-content; min-height: 44px; cursor: pointer; }
+.choice input { width: 1.2rem; height: 1.2rem; margin: 0; accent-color: var(--green); }
+.count { margin: 0 0 .5rem 1.8rem; }
+button { background: var(--green); color: white; border: 0; border-radius: .25rem; padding: .65rem 1.2rem; min-height: 44px; cursor: pointer; }
+button:disabled { opacity: .7; cursor: wait; }
+.status:empty { margin: 0; }
+@media (max-width: 650px) {
+  .hero, .events { grid-template-columns: 1fr; }
+  .flowers { min-height: 12rem; aspect-ratio: 2 / 1; }
+}

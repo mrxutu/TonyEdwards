@@ -11,7 +11,7 @@
 * { box-sizing: border-box; }
 body { margin: 0; }
 h1, h2, h3 { font-family: Georgia, serif; font-weight: 400; line-height: 1.13; margin: 0; }
-h1 { font-size: clamp(2.5rem, 6vw, 5.1rem); }
+h1 { font-size: clamp(1.875rem, 4.5vw, 3.825rem); }
 h2 { font-size: clamp(1.75rem, 4vw, 2.6rem); }
 h3 { font-size: 1.55rem; }
 p { margin: .85rem 0; }

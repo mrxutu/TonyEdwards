@@ -24,6 +24,8 @@ a:hover { text-decoration-thickness: .13em; }
 .eyebrow { color: var(--green); font-size: .78rem; letter-spacing: .19em; text-transform: uppercase; margin: 0 0 1rem; }
 .lifespan { margin: .8rem 0 0; }
 .date { margin: 1.6rem 0 1rem; }
+.date-label, .date time { display: block; }
+.date-label { font-weight: 650; }
 nav { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; }
 nav a { display: inline-flex; align-items: center; min-height: 44px; }
 .flowers { background: #e2dfd1 url(images/white-flowers.jpg) 75% center / cover no-repeat; min-height: 25rem; }
